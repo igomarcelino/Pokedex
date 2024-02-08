@@ -1,22 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: blue;
-}
-
-.content{
-    width: 80%;
-    height: 40px;
-    border: 1px solid black;
-    align-items: center;
     text-align: center;
-    justify-items: center;
+    background-color: blue;
+    min-height: 100vh;
 }
 
 
-@media screen and (min-width: 992px) {
-    .content{
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
-    }
-  }
+
+main{
+    display: inline-block;
+    margin-top: 5%;
+    padding: 15px;
+    position: relative;
+}
+
+main .logo{
+    width: 15vw;
+}
+
+
+
+
+

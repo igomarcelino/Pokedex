@@ -1,88 +1,71 @@
 
-.pokemons{
+.pokemonBkg{
+    position: absolute;
+    width: 76%;
+    height: 49.5%;
+    left: 12%;
+    bottom: 31.3%;
+    box-shadow: 2px 2px 3px black;
+}
+
+.pokedex .pokedexImg{
+    max-width: 440px;
+    height: 90vh;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px black, 2px 2px 3px black;
+
+}
+
+.pokemonImg{
+    position: absolute;
+    left: 34%;
+    width: 31%;
+    bottom: 35%;
+}
+
+.pokemonType{
+    position: absolute;
+    left: 40%;
+    top: 28%;
+    
+}
+
+h5{
+    position: absolute;
+    width: 8rem;
+    top: 21%;
+    left: 31%;
+    background-color: aqua;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    justify-items: center;
+    font-size: 1.2rem;
+}
+.pokemonType span{
+    background-color: bisque;
+    border-radius: 1rem;
+    padding: 0.25rem;
+}
+
+.pokemonData{
+    position: absolute;
+    left: 33%;
+    bottom: 9%;
+}
+
+.pokemonData ol{
     list-style: none;
-    padding: 0;
-    margin: 0;
+}
+
+.pokemonStats{
     display: grid;
-    grid-template-columns:  1fr;
+    grid-template-columns: repeat(2,1fr);
+    text-align: start;
+    color: white;
+    font-size: .92rem; 
 }
 
-@media screen and (min-width: 380px) {
-    .pokemons{
-        grid-template-columns: 1fr 1fr;
-  }
-
+.pokemonStats li{
+    margin-right: 1rem;
 }
-
-@media screen and (min-width: 576px) {
-    .pokemons{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-
-@media screen and (min-width: 992px) {
-    .pokemons{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-  }
-
-
-
-.fire {
-    background-color: #ee7f30;
-    
-}
-.grass{
-    background-color: #77c850;
-}
-.normal{
-    background-color: #a6a877;
-}
-.water{
-    background-color: #678fee;
-}
-.electric{
-   background-color:#f7cf2e ; 
-}
-.ice{
-    background-color: #98d5d7;
-}
-.ground{
-    background-color: #dfbf69;
-}
-.flying{
-    background-color: #a98ff0;
-}
-.poison{
-    background-color: #a040a0;
-}
-.fighting{
-    background-color: #bf3029;
-}
-.psychic{
-    background-color: #f65687;
-}
-.dark{
-    background-color: #725847;
-}
-.rock{
-    background-color: #b8a137;
-}
-.bug{
-    background-color: #a8b720;
-}
-.ghost{
-    background-color: #6e5896;
-}
-.steel{
-    background-color: #b9b;
-}
-.dragon{
-    background-color: #6f38f6;
-}
-.fairy{
-    background-color: #f9aec7;
-}
-
-
-    
