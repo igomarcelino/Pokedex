@@ -17,6 +17,6 @@ function loadPokemon(offset,limit){
                 </div>
                 
                 </li>
-            `).join('')
+            `).join(' ')
     })
-}loadPokemon();
+}

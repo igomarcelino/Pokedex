@@ -1,22 +1,16 @@
 body{
-    background-color: #f6f8fc;
+    background-color: blue;
 }
 
 .content{
-    padding: 1rem;
-    background-color: #fff;
-    height: 100vh;
-    height: 100vw;
+    width: 80%;
+    height: 40px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
 }
 
-.content h2{
-    background-color: aquamarine;
-    margin: auto;
-    text-align: center;
-    width: fit-content;
-    border-radius: 1rem;
-    padding: 0.25rem;
-}
 
 @media screen and (min-width: 992px) {
     .content{
