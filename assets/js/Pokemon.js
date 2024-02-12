@@ -5,7 +5,7 @@ class Pokemon{
     type;
     photo;
     hp;
-    attck;
+    attack;
     defense;
     specialAttack;
     specialDefense;
