@@ -4,7 +4,7 @@ const pokeApi = {}
 
 
 
-pokeApi.getPokemon = (poke = 0)=>{
+pokeApi.getPokemon = (poke = 1)=>{
     const urlApi = `https://pokeapi.co/api/v2/pokemon/${poke}`
     return fetch(urlApi).then((responseUrl )=> responseUrl.json())
                         .then((jsonBody) => convertPokeApiDetail(jsonBody))

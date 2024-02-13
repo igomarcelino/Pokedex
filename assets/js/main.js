@@ -1,36 +1,36 @@
 
-const pokemonDiv = document.getElementById('pokedex');
+const pokemonName = document.getElementById('pokemonName')
+const pokemonImg = document.getElementById('pokemonImg')
+const pokemonHp = document.getElementById('hp')
+const pokemonAt = document.getElementById('at')
+const pokemonDf = document.getElementById('df')
+const pokemonSat = document.getElementById('sat')
+const pokemonSdf = document.getElementById('sdf')
+const pokemonSpd = document.getElementById('spd')
+const formPokemon = document.getElementById('pokemonForm')
+const pokemonInput = document.getElementById('pokemonSearch')
+const pokemonColor = document.getElementById('pokemonColor')
 
-
-var pokeSearch = 1
-
-
-function loadPokemon(){
+function loadPokemon(pokeSearch){
     pokeApi.getPokemon(pokeSearch).then((pokemon) => {
-        pokemonDiv.innerHTML += `
-        <img class="pokemonImg" src="${pokemon.photo}" alt="pokemon photo">
-            <div class="pokemonType">
-                ${pokemon.types.map((slot)=>`<span class="${slot}">${slot}</span>`).join(' ')}
-            </div>
-            <h5 id="pokemonName" class="pokemonName ${pokemon.type}">${pokemon.name}</h5>
-            <div class="pokemonSearch">
-                <input id="pokemonSearch" type="text" placeholder="Type id/name !!">
-            </div>
-            <div class="pokemonData">
-                <ol class="pokemonStats">
-                    <li>HP: <span>${pokemon.hp}</span></li>
-                    <li>AT: <span>${pokemon.attack}</span></li>
-                    <li>DF: <span>${pokemon.defense}</span></li>
-                    <li>S.AT: <span>${pokemon.specialAttack}</span></li>
-                    <li>S.DF: <span>${pokemon.specialDefense}</span></li>
-                    <li>SPD: <span>${pokemon.speed}</span></li>
-                </ol>
-            </div>
-        </div>
-        <ol id="pokemonList" class="pokemonList">
-
-        </ol>
+        pokemonColor.classList.replace(pokemonColor.classList.value,`${pokemon.type}`)
+        pokemonName.innerHTML = pokemon.name;
+        pokemonName.classList.replace(pokemonColor.classList.value,`${pokemon.type}`);
+        pokemonImg.src = pokemon.photo;
+        pokemonHp.innerHTML = pokemon.hp;    
+        pokemonAt.innerHTML = pokemon.attack;
+        pokemonDf.innerHTML = pokemon.defense;
+        pokemonSat.innerHTML = pokemon.specialAttack;
+        pokemonSdf.innerHTML = pokemon.specialDefense;
+        pokemonSpd.innerHTML = pokemon.speed;   
         
-        `
     })
-}loadPokemon();
+}
+
+formPokemon.addEventListener('submit',(event)=>{
+    event.preventDefault();
+    loadPokemon(pokemonInput.value)
+})
+
+
+

@@ -9,6 +9,17 @@
 }
 
 /* Podekex*/
+#pokemonColor{
+    width: 15.4%;
+    height: 10%;
+    position: absolute;
+    background-color: black;
+    top: 3.2%;
+    left: 10.6%;
+    border-radius: 50%;
+    box-shadow: 1px 0.5px 1px black, 1px 0.5px 1px black;
+}
+
 .pokedex .pokedexImg{
     max-width: 440px;
     height: 90vh;
@@ -31,17 +42,18 @@
     
 }
 
-h5{
+#pokemonName{
     position: absolute;
     width: 8rem;
     top: 21%;
     left: 31%;
-    background-color: aqua;
+    /* background-color: aqua; */
     color: white;
     border-radius: 1rem;
     text-align: center;
     justify-items: center;
     font-size: 1.2rem;
+    text-transform: capitalize;
 }
 .pokemonType span{
     
@@ -51,25 +63,28 @@ h5{
 
 .pokemonSearch{
     position: absolute;
-    width: 84%;
+    width: 84.5%;
     background-color: black;
-    left: 8%;
-    bottom: 22.3%;
+    left: 7.9%;
+    bottom: 22%;
     border-radius: 1rem;
     color: white;
 }
 
 .pokemonSearch input{
     overflow: visible;
+    overflow: visible;
     background-color: black;
     border: none;
     color: white;
+    padding: 2px;
+    text-align: center;
 }
 
 .pokemonData{
     position: absolute;
     left: 30.4%;
-    bottom: 6.6%;
+    bottom: 6.1%;
     background-color: black;
     width: 44%;
     height: 14.1%;
@@ -94,7 +109,7 @@ h5{
    margin: .1%;
 }
 
-.fire ,#pokemonBody{
+.fire {
     background-color: #ee7f30;
     
 }
@@ -125,7 +140,7 @@ h5{
 .fighting{
     background-color: #bf3029;
 }
-.psychic, #pokemonBody{
+.psychic{
     background-color: #f65687;
 }
 .dark{
@@ -149,3 +164,4 @@ h5{
 .fairy{
     background-color: #f9aec7;
 }
+

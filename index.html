@@ -20,30 +20,33 @@
         <div class="pokedex" id="pokedex">
             <img class="pokemonBkg" src="./assets/picture/background_prairie_pokemon_screencapture_by_nemotrex_de8nlib-fullview.jpg" alt="backgroung pokemon">
             <img class="pokedexImg" src="./assets/picture/6e52e0a37e4194b7766ffbde181a0434.png" alt="pokedex">
-            <!-- <img class="pokemonImg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="pokemon photo">
-            <div class="pokemonType">
+            <img id="pokemonImg" class="pokemonImg" src="./assets/picture/pngwing.com (1).png" alt="pokemon photo">
+            <!-- <div class="pokemonType">
                 <span>Tipo</span>
                 <span>Tipo</span>
-            </div>
-            <h5 id="pokemonName" class="pokemonName">Bulba</h5>
+            </div> -->
+            <div id="pokemonColor" class="pokemonColor"></div>
+            <h5 id="pokemonName" class="pokemonName"></h5>
             <div class="pokemonSearch">
-                <input id="pokemonSearch" type="text" placeholder="Type id/name !!">
+                <form id="pokemonForm">
+                    <input id="pokemonSearch" type="search" placeholder="  id/name !!  " required>
+                </form>
             </div>
             <div class="pokemonData">
                 <ol class="pokemonStats">
-                    <li>HP: <span>100</span></li>
-                    <li>AT: <span>100</span></li>
-                    <li>DF: <span>100</span></li>
-                    <li>S.AT: <span>100</span></li>
-                    <li>S.DF: <span>100</span></li>
-                    <li>SPD: <span>100</span></li>
+                    <li>HP: <span id="hp">?</span></li>
+                    <li>AT: <span id="at">?</span></li>
+                    <li>DF: <span id="df">?</span></li>
+                    <li>S.AT: <span id="sat">?</span></li>
+                    <li>S.DF: <span id="sdf">?</span></li>
+                    <li>SPD: <span id="spd">?</span></li>
                 </ol>
             </div>
         </div>
         <ol id="pokemonList" class="pokemonList">
 
         </ol>
-         -->
+        
 
     </main>
     
