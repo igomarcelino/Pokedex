@@ -18,6 +18,9 @@
     left: 10.6%;
     border-radius: 50%;
     box-shadow: 1px 0.5px 1px black, 1px 0.5px 1px black;
+    color: white;
+    padding-top: 5%;
+    font-weight: bold;
 }
 
 .pokedex .pokedexImg{

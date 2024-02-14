@@ -10,7 +10,7 @@ const pokemonSpd = document.getElementById('spd')
 const formPokemon = document.getElementById('pokemonForm')
 const pokemonInput = document.getElementById('pokemonSearch')
 const pokemonColor = document.getElementById('pokemonColor')
-const pokemonTotal = document.getElementsById('pokemonTotal')
+const pokemonTotal = document.getElementById('pokemonTotal')
 
 function loadPokemon(pokeSearch){
     pokeApi.getPokemon(pokeSearch).then((pokemon) => {
