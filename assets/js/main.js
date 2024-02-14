@@ -10,6 +10,7 @@ const pokemonSpd = document.getElementById('spd')
 const formPokemon = document.getElementById('pokemonForm')
 const pokemonInput = document.getElementById('pokemonSearch')
 const pokemonColor = document.getElementById('pokemonColor')
+const pokemonTotal = document.getElementsById('pokemonTotal')
 
 function loadPokemon(pokeSearch){
     pokeApi.getPokemon(pokeSearch).then((pokemon) => {
@@ -22,7 +23,8 @@ function loadPokemon(pokeSearch){
         pokemonDf.innerHTML = pokemon.defense;
         pokemonSat.innerHTML = pokemon.specialAttack;
         pokemonSdf.innerHTML = pokemon.specialDefense;
-        pokemonSpd.innerHTML = pokemon.speed;   
+        pokemonSpd.innerHTML = pokemon.speed;
+        pokemonTotal.innerHTML = pokemon.total   
         
     })
 }
